@@ -1,0 +1,20 @@
+[
+    {
+        "title": "ASDF",
+        "votes": 0,
+        "pages": 100,
+        "finished": false
+    },
+    {
+        "title": "qwer",
+        "votes": 0,
+        "pages": 200,
+        "finished": false
+    },
+    {
+         "title": "Project Hail Mary",
+        "votes": 8,
+        "pages": 100,
+        "finished": true
+    }
+]
