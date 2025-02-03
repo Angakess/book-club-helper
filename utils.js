@@ -163,12 +163,6 @@ export async function rememberPolls() {
             components: [],
           },
         })
-        /* const answers = await getAnswers(poll.channel_id, poll.message_id)
-        if (!answers) {
-          console.warn(`Poll ${poll.message_id} already deleted.`)
-          return
-        }
-        updateNomineesVotes(answers, poll.channel_id) */
       } catch (err) {
         console.log(err)
       }
@@ -197,20 +191,6 @@ export async function rememberPolls() {
               components: [],
             },
           })
-
-          /* const answers = await getAnswers(poll.channel_id, poll.message_id)
-          if (!answers) {
-            console.warn(`Poll ${poll.message_id} already deleted.`)
-            return
-          }
-          updateNomineesVotes(answers, poll.channel_id)
-          deleteActivePoll(poll.message_id)
-          await DiscordRequest(`/channels/${poll.channel_id}/messages/${poll.message_id}`, {
-            method: 'PATCH',
-            body: {
-              components: [],
-            },
-          }) */
         } catch (err) {
           console.error('Error closing the poll or sending results:', err)
         }
