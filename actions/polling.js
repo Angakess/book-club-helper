@@ -20,7 +20,7 @@ import {
 } from '../database.js'
 import { EmbedBuilder } from 'discord.js'
 const HOST_URL = process.env.HOST_URL
-const POLLDURATIONHRS = 1
+const POLLDURATIONHRS = 24
 
 async function runPoll(req, res) {
   await res.send({
