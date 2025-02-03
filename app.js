@@ -111,7 +111,7 @@ app.post('/interactions', verifyKeyMiddleware(process.env.PUBLIC_KEY), async fun
   return res.status(400).json({ error: 'unknown interaction type' })
 })
 
-await rememberPolls()
+rememberPolls()
 console.log('Finished checking for active polls')
 
 app.listen(PORT, () => {
